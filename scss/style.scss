@@ -119,6 +119,16 @@ section {
 
 	&.sec-about {
 		padding-top: 120px;
+
+		.feature-meal {
+			.card {
+				position: relative;
+				img {
+					position: absolute;
+					top: -50px;
+				}
+			}
+		}
 	}
 }
 
