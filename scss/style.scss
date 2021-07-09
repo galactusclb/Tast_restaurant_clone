@@ -97,7 +97,7 @@ section {
 					&.leaf-1 {
 						top: unset;
 						bottom: -40px;
-						left: -20px;
+						left: 0px;
 						// transform: rotate(80deg);
 					}
 					&.leaf-2 {
@@ -118,16 +118,52 @@ section {
 	}
 
 	&.sec-about {
-		padding-top: 120px;
+		min-height: unset;
+		padding-top: 140px;
 
 		.feature-meal {
 			.card {
 				position: relative;
-				img {
+				border-radius: 40px;
+				// border-color: transparent;
+				box-shadow: 0px 10px 20px 4px #00000015;
+
+				.meal-img {
 					position: absolute;
-					top: -50px;
+					min-width: 150px;
+					max-width: 200px;
+					height: 150px;
+					top: -75px;
+				}
+
+				.info {
+					margin-top: 130px;
+				}
+
+				.meal-details-viewer {
+					position: absolute;
+					bottom: -25px;
+					right: 20px;
+					background: $primary-color;
+					color: $primary-inverce-text-color;
+					font-size: 1.8rem;
+					border-radius: 25px 25px 45px 25px;
+					cursor: pointer;
 				}
 			}
+		}
+	}
+
+	&.sec-story {
+		padding-top: 150px;
+
+		p {
+			font-size: 1.3rem;
+			line-height: 1.9rem;
+		}
+
+		.story-img {
+			max-width: 450px;
 		}
 	}
 }
