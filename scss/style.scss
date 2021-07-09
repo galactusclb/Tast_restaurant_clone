@@ -1,0 +1,156 @@
+$primary-color: #000;
+$primary-text-color: #000;
+$primary-inverce-text-color: #fff;
+
+html,
+body {
+	font-family: "Gilroy", sans-serif !important;
+}
+
+header {
+	.addBackground {
+		background: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(255, 255, 255, 0.3984944319524685) 50%,
+			rgba(255, 255, 255, 1) 100%
+		);
+	}
+
+	nav {
+		// background: orange;
+
+		a {
+			color: inherit;
+
+			h1 {
+				font-weight: 600 !important;
+				font-size: 2rem !important;
+			}
+
+			p {
+				font-size: 0.9rem;
+			}
+		}
+
+		.cart {
+			P {
+				background: $primary-color;
+				color: $primary-inverce-text-color;
+				font-size: 1.8rem;
+				border-radius: 25px 25px 45px 25px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+section {
+	min-height: 100vh;
+
+	&.sec-hero {
+		padding-top: 150px;
+
+		.container {
+			height: 100%;
+
+			h1 {
+				font-size: 5rem;
+				font-weight: 800;
+				font-family: "Gilroy";
+				letter-spacing: -1px;
+			}
+
+			.view-menu {
+				background: $primary-text-color;
+				color: $primary-inverce-text-color;
+				border-radius: 25px 25px 0px 25px;
+				box-shadow: 0px 10px 20px 6px #00000025;
+
+				p {
+					font-size: 1.5rem;
+					font-weight: 600;
+
+					i {
+						font-size: 1.7rem;
+					}
+				}
+			}
+
+			.menu-icons {
+				.ico {
+					width: 60px;
+					border-radius: 10px;
+					box-shadow: 0px 10px 20px 6px #00000025;
+					cursor: pointer;
+				}
+			}
+
+			.hero-img {
+				position: relative;
+				max-width: 530px;
+
+				img {
+					position: absolute;
+					top: -60px;
+
+					&.leaf-1 {
+						top: unset;
+						bottom: -40px;
+						left: -20px;
+						// transform: rotate(80deg);
+					}
+					&.leaf-2 {
+						top: unset;
+						bottom: 0px;
+						right: -30px;
+						transform: rotate(50deg);
+					}
+
+					&.leaf-3 {
+						top: unset;
+						left: -69px;
+						transform: rotate(120deg);
+					}
+				}
+			}
+		}
+	}
+
+	&.sec-about {
+		padding-top: 120px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 1140px;
+	}
+}
+
+@media (max-width: 768px) {
+	section {
+		&.sec-hero {
+			.container {
+				h1 {
+					font-size: 4rem;
+				}
+
+				.hero-img {
+					margin-top: 60px;
+					max-width: 320px;
+
+					img {
+						position: relative;
+						top: 0px;
+					}
+				}
+			}
+		}
+	}
+}
