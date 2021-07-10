@@ -356,9 +356,6 @@ footer {
 			}
 		}
 	}
-
-	.right-side {
-	}
 }
 
 @media (min-width: 1400px) {
@@ -374,6 +371,17 @@ footer {
 
 @media (max-width: 1199.98px) {
 	section {
+		&.sec-hero {
+			.hero-img {
+				// max-width: 530px;
+
+				img {
+					// position: absolute;
+					top: 0px !important;
+				}
+			}
+		}
+
 		&.sec-testimonials {
 			.testimonials-img {
 				margin-left: auto;
@@ -385,15 +393,50 @@ footer {
 }
 @media (max-width: 992px) {
 	section {
-		// &.sec-testimonials {
-		// 	.testimonials-img {
-		// 		max-width: 150px;
-		// 	}
-		// }
+		&.sec-hero {
+			.hero-img {
+				img {
+					top: 0 !important;
+
+					&.leaf-2 {
+						top: 250px !important;
+						width: 130px;
+					}
+
+					&.leaf-3 {
+						top: 250px !important;
+						left: 40px !important;
+						width: 130px;
+					}
+				}
+			}
+		}
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+	section {
+		&.sec-hero {
+			.container {
+				h1 {
+					font-size: 4rem;
+				}
+
+				.hero-img {
+					margin-top: 60px;
+					max-width: 320px;
+				}
+			}
+		}
+
+		&.sec-testimonials {
+			.testimonials-img {
+				max-width: 350px;
+			}
+		}
+	}
+}
+@media (max-width: 575.98px) {
 	section {
 		&.sec-hero {
 			.container {
@@ -406,16 +449,64 @@ footer {
 					max-width: 320px;
 
 					img {
-						position: relative;
-						top: 0px;
+						top: 0 !important;
+						background: orange;
+
+						&.leaf-2 {
+							top: 250px !important;
+							width: 130px;
+						}
+
+						&.leaf-3 {
+							top: 250px !important;
+							left: 40px !important;
+							width: 130px;
+						}
 					}
 				}
 			}
 		}
 
-		&.sec-testimonials {
-			.testimonials-img {
+		&.sec-about {
+			padding-top: 100px;
+
+			.feature-meal {
+				& > div {
+					.card {
+						margin-top: 90px;
+					}
+				}
+				& > div:nth-child(1) {
+					.card {
+						margin-top: 0;
+					}
+				}
+			}
+
+			.right-side {
+				margin-top: 90px !important;
+			}
+		}
+
+		&.sec-story {
+			padding-top: 20px;
+
+			.story-img {
 				max-width: 350px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 50px;
+			}
+		}
+
+		&.sec-testimonials {
+			margin-bottom: 100px;
+
+			.row {
+				flex-direction: column-reverse;
+			}
+			.testimonials-img {
+				max-width: 320px;
 			}
 		}
 	}
