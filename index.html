@@ -27,6 +27,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
 		/>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Taste</title>
 	</head>
@@ -142,6 +143,7 @@
 				</div>
 			</div>
 		</section>
+        <!-- about us -->
 		<section id="about" class="sec-about mt-5">
 			<div class="container">
 				<div class="row mt-5">
@@ -189,10 +191,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md">
-						<p class="h1">We have Delicious food</p>
-						<p class="h1">Tasty food in town</p>
-						<p>
+					<div class="col-md right-side">
+						<h2 class="h1">We have Delicious food</h2>
+						<h2 class="h1">Tasty food in town</h2>
+						<p class="mt-5">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
 							nulla sunt magni quasi, inventore eveniet autem neque, vel natus
 							minus, amet fugit impedit?
@@ -201,12 +203,15 @@
 				</div>
 			</div>
 		</section>
+        <!-- story -->
 		<section id="story" class="sec-story mt-5">
 			<div class="container">
 				<div class="row mt-5 align-items-center">
 					<div class="col-md">
-						<h2 class="h1">About Us</h2>
-						<p class="text-center text-sm-start mt-5">
+						<h2 class="h1">Cooked by the </h2>
+                        <h2 class="h1"> Best Chefs in the </h2>
+                        <h2 class="h1">World</h2>
+						<p class="text-center text-sm-start mt-3">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
 							deserunt, pariatur nobis a unde exercitationem necessitatibus eius
 							assumenda. Accusantium amet facilis quam ipsum rerum magni alias
@@ -226,8 +231,425 @@
 				</div>
 			</div>
 		</section>
-		<section></section>
+        <!-- meal-list -->
+		<section id="meal-menu" class="sec-meal-menu">
+			<div class="container">
+				<div class="meal-list mt-5">
+					<h2 class="h1">Menus</h2>
+					<nav class="mt-5">
+						<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<button
+								class="nav-link active"
+								id="nav-home-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-home"
+								type="button"
+								role="tab"
+								aria-controls="nav-home"
+								aria-selected="true"
+							>
+								Home
+							</button>
+							<button
+								class="nav-link"
+								id="nav-profile-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-profile"
+								type="button"
+								role="tab"
+								aria-controls="nav-profile"
+								aria-selected="false"
+							>
+								Profile
+							</button>
+							<button
+								class="nav-link"
+								id="nav-contact-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-contact"
+								type="button"
+								role="tab"
+								aria-controls="nav-contact"
+								aria-selected="false"
+							>
+								Contact
+							</button>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<div
+							class="tab-pane fade show active"
+							id="nav-home"
+							role="tabpanel"
+							aria-labelledby="nav-home-tab"
+						>
+							<div class="row mt-5">
+								<div class="col-md">
+									<div class="row g-4 meals">
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-2.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-3.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-2.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-3.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-2.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-3.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="nav-profile"
+							role="tabpanel"
+							aria-labelledby="nav-profile-tab"
+						>
+							<div class="row mt-5">
+								<div class="col-md">
+									<div class="row g-4 meals">
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-2.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-3.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card px-4">
+												<div class="meal-img">
+													<img
+														src="img/meal-2.png"
+														alt=""
+														srcset=""
+														class="img-fluid"
+													/>
+												</div>
+												<div class="info mb-4">
+													<h4>Crab Ramen</h4>
+													<span>Spicy with garlic</span>
+													<h4 class="mt-2">$ 24.00</h4>
+												</div>
+												<div class="meal-details-viewer px-3 py-3">
+													<i class="bi bi-search"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="nav-contact"
+							role="tabpanel"
+							aria-labelledby="nav-contact-tab"
+						>
+                        <div class="row mt-5">
+                            <div class="col-md">
+                                <div class="row g-4 meals">
+                                    <div class="col-md-3">
+                                        <div class="card px-4">
+                                            <div class="meal-img">
+                                                <img
+                                                    src="img/meal-2.png"
+                                                    alt=""
+                                                    srcset=""
+                                                    class="img-fluid"
+                                                />
+                                            </div>
+                                            <div class="info mb-4">
+                                                <h4>Crab Ramen</h4>
+                                                <span>Spicy with garlic</span>
+                                                <h4 class="mt-2">$ 24.00</h4>
+                                            </div>
+                                            <div class="meal-details-viewer px-3 py-3">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!-- contact us -->
+        <section id="contact" class="sec-contact mt-5">
+            <div class="container">
+                <div class="div-bg text-center ">
+                    <h2 class="h1">Contact Us Now</h2>
+                    <p class="lead mb-0">LET'S TALK</p>
+                    <div class="row mt-5">
+                        <div class="col-md ">
+                            <p class="">
+                                <span class="px-3 py-3 me-3">
+                                    <i class="bi bi-envelope-fill "></i>
+                                </span>
+                                Chanakabalasuriya123@gmail.com
+                            </p>
+                            <p class="mt-4">
+                                <span class="px-3 py-3 me-3">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </span>
+                                +10 (78) 738-9083
+                            </p>
+                        </div>
+                        <!-- <div class="col-md">
+                            <div id='map' style='width: 400px; height: 300px;'></div>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- testimonials -->
+        <section id="testimonials" class="sec-testimonials">
+            <div class="container">
+                <div class="row mt-5 align-items-center">
+                    <div class="col-md">
+						<div class="testimonials-img">
+							<img
+								src="img/dish-2-min.png"
+								class="img-fluid"
+								alt=""
+								srcset=""
+							/>
+						</div>
+					</div>
+					<div class="col-md">
+						<h2 class="h1">Customer</h2>
+						<h2 class="h1">Say about us</h2>
+                        <div class="testimonial-list mt-5">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="">
+                                        <div class="testimonial-user d-flex align-items-center">
+                                            <div class="user-pic">
+                                                <img src="img/user-1.jpg" alt="" class="img-fluid" srcset="">
+                                            </div>
+                                            <div class=" ms-3">
+                                                <p class="h4 mb-0 name">Hannah Jane</p>
+                                                <p class="user-title">Writter</p>
+                                            </div>
+                                        </div>
+                                        <p class="review mt-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate unde 
+                                            placeat dolores, eveniet architecto saepe a ab dolor ipsa ratione! 
+                                            Fugiat deleniti nostrum vero voluptas alias tempora sapiente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md left-side">
+                        <h2 class="h2 mb-3">Tasty</h2>
+                        <p>Champ de Mars, 5 Avenue</p>
+                        <p>Anatole France, 70032 Paris</p>
+                        <p>France</p>
+
+                        <div class="d-flex social-icons mt-4">
+                            <span class="h2 me-2">
+                                <i class="bi bi-facebook"></i>
+                            </span>
+                            <span class="h2 mx-2">
+                                <i class="bi bi-instagram"></i>
+                            </span>
+                            <span class="h2 mx-2">
+                                <i class="bi bi-twitter"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md right-side">
+                        <div class="row">
+                            <div class="col-md">
+                                <h4 class="h4 mb-4">
+                                    Information
+                                </h4>
+                                <p>About Us</p>
+                                <p>Testimonials</p>
+                                <p>Events</p>
+                            </div>
+                            <div class="col-md">
+                                <h4 class="h4 mb-4">
+                                    Helpful Links
+                                </h4>
+                                <p>Services</p>
+                                <p>Support</p>
+                                <p>Term & Condition</p>
+                                <p>Privacy</p>
+                            </div>
+                            <div class="col-md">
+                                <h4 class="h4 mb-4">
+                                    Our Menu
+                                </h4>
+                                <p>Special</p>
+                                <p>Popular</p>
+                                <p>Categories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 		<!-- scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
 		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -2,6 +2,10 @@ $primary-color: #000;
 $primary-text-color: #000;
 $primary-inverce-text-color: #fff;
 
+$secondary-color: #58971c;
+
+$text-gray: #ababab;
+
 html,
 body {
 	font-family: "Gilroy", sans-serif !important;
@@ -39,7 +43,15 @@ header {
 				color: $primary-inverce-text-color;
 				font-size: 1.8rem;
 				border-radius: 25px 25px 45px 25px;
+				border: solid 3px $primary-color;
+				transition: 0.5s;
 				cursor: pointer;
+
+				&:hover {
+					background: $secondary-color;
+					border: solid 3px $secondary-color;
+					color: $primary-inverce-text-color;
+				}
 			}
 		}
 	}
@@ -64,8 +76,11 @@ section {
 			.view-menu {
 				background: $primary-text-color;
 				color: $primary-inverce-text-color;
+				border: solid 3px $primary-color;
 				border-radius: 25px 25px 0px 25px;
 				box-shadow: 0px 10px 20px 6px #00000025;
+				transition: 0.5s;
+				cursor: pointer;
 
 				p {
 					font-size: 1.5rem;
@@ -74,6 +89,12 @@ section {
 					i {
 						font-size: 1.7rem;
 					}
+				}
+
+				&:hover {
+					background: $secondary-color;
+					border: solid 3px $secondary-color;
+					color: $primary-inverce-text-color;
 				}
 			}
 
@@ -148,8 +169,23 @@ section {
 					color: $primary-inverce-text-color;
 					font-size: 1.8rem;
 					border-radius: 25px 25px 45px 25px;
+					border: solid 3px $primary-color;
+					transition: 0.5s;
 					cursor: pointer;
+
+					&:hover {
+						background: $secondary-color;
+						border: solid 3px $secondary-color;
+						color: $primary-inverce-text-color;
+					}
 				}
+			}
+		}
+
+		.right-side {
+			p {
+				font-size: 1.3rem;
+				line-height: 1.9rem;
 			}
 		}
 	}
@@ -165,6 +201,163 @@ section {
 		.story-img {
 			max-width: 450px;
 		}
+	}
+
+	&.sec-meal-menu {
+		padding-top: 80px;
+
+		.meals {
+			padding-top: 10px;
+
+			.card {
+				position: relative;
+				border-radius: 40px;
+				// border-color: transparent;
+				box-shadow: 0px 10px 20px 4px #00000015;
+				margin-top: 110px;
+
+				.meal-img {
+					position: absolute;
+					min-width: 150px;
+					max-width: 200px;
+					height: 150px;
+					top: -75px;
+				}
+
+				.info {
+					margin-top: 130px;
+				}
+
+				.meal-details-viewer {
+					position: absolute;
+					bottom: -25px;
+					right: 20px;
+					background: $primary-color;
+					color: $primary-inverce-text-color;
+					font-size: 1.8rem;
+					border-radius: 25px 25px 45px 25px;
+					border: solid 3px $primary-color;
+					transition: 0.5s;
+					cursor: pointer;
+
+					&:hover {
+						background: $secondary-color;
+						border: solid 3px $secondary-color;
+						color: $primary-inverce-text-color;
+					}
+				}
+			}
+		}
+	}
+
+	&.sec-contact {
+		padding-top: 160px;
+		color: $primary-inverce-text-color;
+
+		.div-bg {
+			background: url("../img/contactus-bg.jpg") no-repeat center bottom / cover;
+			// border-radius: 45px;
+			padding-top: 80px;
+			padding-bottom: 80px;
+
+			.h1 {
+				// font-weight: 700;
+				font-size: 3.5rem;
+			}
+
+			p {
+				font-size: 18px;
+
+				// &.lead{}
+
+				span {
+					background: $primary-inverce-text-color;
+					color: $secondary-color;
+					font-size: 1.5rem;
+					border-radius: 25px 25px 45px 25px;
+					border: solid 3px $primary-inverce-text-color;
+					transition: 0.5s;
+					cursor: pointer;
+
+					&:hover {
+						background: $secondary-color;
+						border: solid 3px $secondary-color;
+						color: $primary-inverce-text-color;
+					}
+				}
+			}
+		}
+	}
+
+	&.sec-testimonials {
+		// padding-top: 150px;
+
+		// p {
+		// 	font-size: 1.3rem;
+		// 	line-height: 1.9rem;
+		// }
+
+		.testimonials-img {
+			position: relative;
+			max-width: 450px;
+		}
+
+		.testimonial-list {
+			.testimonial-user {
+				.user-pic {
+					max-width: 80px;
+					border-radius: 50%;
+					overflow: hidden;
+				}
+
+				.name {
+					font-weight: 700;
+				}
+
+				.user-title {
+					color: $text-gray;
+				}
+			}
+
+			.review {
+				max-width: 420px;
+				color: $text-gray;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+footer {
+	background: $primary-color;
+	color: $primary-inverce-text-color;
+
+	p {
+		color: $text-gray;
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	.left-side {
+		.social-icons {
+			span {
+				cursor: pointer;
+
+				i {
+					transition: 0.5s;
+					&:hover {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+
+	.right-side {
 	}
 }
 

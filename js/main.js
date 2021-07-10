@@ -15,8 +15,8 @@ window.addEventListener("scroll", () => {
 // mouse over parallax effcet
 let navbar = document.getElementById("navbar-main");
 let hero = document.getElementById("hero");
-navbar.addEventListener("mousemove", parallax);
-hero.addEventListener("mousemove", parallax);
+// navbar.addEventListener("mousemove", parallax);
+window.addEventListener("mousemove", parallax);
 
 function parallax(e) {
 	hero.querySelectorAll(".layer").forEach((layer) => {
@@ -29,3 +29,12 @@ function parallax(e) {
 		layer.style.transform = `translateX(${x}px) translateY(${y}px) rotate(${rotate}deg)`;
 	});
 }
+
+// box map
+mapboxgl.accessToken =
+	"pk.eyJ1IjoiY2xiY2hhbmEiLCJhIjoiY2txd2k4MGx5MG01bzJvcGNmNXc5NTRmMiJ9.XuVFin9HB7UZUofJHjEBdw";
+var map = new mapboxgl.Map({
+	container: "map",
+	style: "mapbox://styles/mapbox/streets-v11",
+});
+// box map end
