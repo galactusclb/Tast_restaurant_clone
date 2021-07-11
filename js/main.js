@@ -38,3 +38,6 @@ var map = new mapboxgl.Map({
 	style: "mapbox://styles/mapbox/streets-v11",
 });
 // box map end
+
+var myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
+myModal.toggle();

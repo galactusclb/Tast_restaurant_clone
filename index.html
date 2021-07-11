@@ -43,9 +43,12 @@
 						<p>Restaurant & BBQ</p>
 					</a>
 					<div class="cart d-inline-block">
-						<p class="px-4 pt-2 pb-4">
-							<i class="bi bi-bag"></i>
-						</p>
+						<a href="#contact">
+							<p class="px-4 pt-2 pb-4">
+								<i class="bi bi-telephone"></i>
+							</p>
+
+						</a>
 					</div>
 				</div>
 			</nav>
@@ -61,9 +64,11 @@
 							<span> For you</span>
 						</h1>
 						<div class="d-inline-block view-menu py-3 px-5 mt-4">
-							<p class="my-0">
-								View Menu <i class="bi bi-arrow-right ms-5"></i>
-							</p>
+							<a href="#meal-menu">
+								<p class="my-0">
+									View Menu <i class="bi bi-arrow-right ms-5"></i>
+								</p>
+							</a>
 						</div>
 						<div
 							class="
@@ -73,38 +78,38 @@
 								mt-5
 							"
 						>
-							<div class="ico m-2 p-3">
+							<a href="#meal-menu" class="ico m-2 p-3">
 								<img
 									class="img-fluid"
 									src="img/icon/svg/011-beer.svg"
 									alt=""
 									srcset=""
 								/>
-							</div>
-							<div class="ico m-2 p-3">
+							</a>
+							<a href="#meal-menu" class="ico m-2 p-3">
 								<img
 									class="img-fluid"
 									src="img/icon/svg/jelly.svg"
 									alt=""
 									srcset=""
 								/>
-							</div>
-							<div class="ico m-2 p-3">
+							</a>
+							<a href="#meal-menu" class="ico m-2 p-3">
 								<img
 									class="img-fluid"
 									src="img/icon/svg/007-orange juice.svg"
 									alt=""
 									srcset=""
 								/>
-							</div>
-							<div class="ico m-2 p-3">
+							</a>
+							<a href="#meal-menu" class="ico m-2 p-3">
 								<img
 									class="img-fluid"
 									src="img/icon/svg/jelly.svg"
 									alt=""
 									srcset=""
 								/>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="col-md d-none d-sm-block hero-img">
@@ -167,7 +172,7 @@
 										<span>Spicy with garlic</span>
 										<h4 class="mt-2">$ 24.00</h4>
 									</div>
-									<div class="meal-details-viewer px-3 py-3">
+									<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 										<i class="bi bi-search"></i>
 									</div>
 								</div>
@@ -187,7 +192,7 @@
 										<span>Spicy with garlic</span>
 										<h4 class="mt-2">$ 24.00</h4>
 									</div>
-									<div class="meal-details-viewer px-3 py-3">
+									<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 										<i class="bi bi-search"></i>
 									</div>
 								</div>
@@ -242,19 +247,7 @@
 					<nav class="mt-5">
 						<div class="nav nav-tabs" id="nav-tab" role="tablist">
 							<button
-								class="nav-link active"
-								id="nav-home-tab"
-								data-bs-toggle="tab"
-								data-bs-target="#nav-home"
-								type="button"
-								role="tab"
-								aria-controls="nav-home"
-								aria-selected="true"
-							>
-								All
-							</button>
-							<button
-								class="nav-link"
+								class="nav-link px-5 active"
 								id="nav-profile-tab"
 								data-bs-toggle="tab"
 								data-bs-target="#nav-profile"
@@ -263,10 +256,33 @@
 								aria-controls="nav-profile"
 								aria-selected="false"
 							>
-								Drinks
+								<img
+										class="img-fluid"
+										src="img/icon/svg/011-beer.svg"
+										alt=""
+										srcset=""
+								/>
+								<p class="mb-0 mt-2">Drinks</p>
 							</button>
 							<button
-								class="nav-link"
+								class="nav-link px-5"
+								id="nav-home-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#nav-home"
+								type="button"
+								role="tab"
+								aria-controls="nav-home"
+								aria-selected="true"
+							>
+								<img
+									class="img-fluid"
+									src="img/icon/svg/007-orange juice.svg"
+									alt=""
+									srcset=""/>
+								<p class="mb-0 mt-2">Spicy</p>
+							</button>
+							<button
+								class="nav-link px-5"
 								id="nav-contact-tab"
 								data-bs-toggle="tab"
 								data-bs-target="#nav-contact"
@@ -274,8 +290,13 @@
 								role="tab"
 								aria-controls="nav-contact"
 								aria-selected="false"
-							>
-								Spicy
+							>	
+								<img
+									class="img-fluid"
+									src="img/icon/svg/jelly.svg"
+									alt=""
+									srcset=""/>
+								<p class="mb-0 mt-2">Spicy 2</p>
 							</button>
 						</div>
 					</nav>
@@ -304,7 +325,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -324,7 +345,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -344,7 +365,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -364,7 +385,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -384,7 +405,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -404,7 +425,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -437,7 +458,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -457,7 +478,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -477,7 +498,7 @@
 													<span>Spicy with garlic</span>
 													<h4 class="mt-2">$ 24.00</h4>
 												</div>
-												<div class="meal-details-viewer px-3 py-3">
+												<div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													<i class="bi bi-search"></i>
 												</div>
 											</div>
@@ -510,7 +531,7 @@
                                                 <span>Spicy with garlic</span>
                                                 <h4 class="mt-2">$ 24.00</h4>
                                             </div>
-                                            <div class="meal-details-viewer px-3 py-3">
+                                            <div class="meal-details-viewer px-3 py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 <i class="bi bi-search"></i>
                                             </div>
                                         </div>
@@ -523,8 +544,8 @@
 			</div>
 		</section>
         <!-- contact us -->
-        <section id="contact" class="sec-contact px-0 px-sm-5 mt-5">
-            <div class="container px-0">
+        <section id="contact" class="sec-contact px-0 mt-5">
+            <div class="container-fluid px-0">
                 <div class="div-bg text-center ">
                     <h2 class="h1">Contact Us Now</h2>
                     <p class="lead mb-0">LET'S TALK</p>
@@ -568,7 +589,7 @@
 					<div class="col-md text-center text-sm-start">
 						<h2 class="h1">Customer</h2>
 						<h2 class="h1">Say about us</h2>
-                        <div class="testimonial-list px-5 mt-5">
+                        <div class="testimonial-list px-5 px-md-0 mt-5">
                             <div class="row">
                                 <div class="col-md">
                                     <div class="">
@@ -648,6 +669,46 @@
             </div>
         </footer>
 
+		<!-- modal -->
+		<div class="modal fade meal-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Crab Ramen</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				  <div class="row">
+					  <div class="col-md-5">
+						<div class="meal-img mx-auto">
+							<img
+								src="img/meal-3.png"
+								alt=""
+								srcset=""
+								class="img-fluid"
+							/>
+						</div>
+					  </div>
+					  <div class="col-md">
+						<div class="info mt-3 mt-sm-0">
+							<h4>Crab Ramen 2</h4>
+							<span>Spicy with garlic</span>
+							<h4 class="mt-2">$ 24.00</h4>
+							<p class="mt-3">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+								Expedita maiores consequatur id ad ipsam, iure rem voluptatibus 
+								magnam repellat nesciunt laboriosam iusto?
+							</p>
+						</div>
+					  </div>
+				  </div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn " data-bs-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		<!-- scripts -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

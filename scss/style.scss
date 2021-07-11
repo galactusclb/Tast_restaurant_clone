@@ -11,6 +11,25 @@ body {
 	font-family: "Gilroy", sans-serif !important;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background: $secondary-color !important;
+	color: $primary-inverce-text-color;
+}
+
+// change scrollbar
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $secondary-color;
+	border-radius: 6px;
+}
+
 header {
 	.addBackground {
 		background: linear-gradient(
@@ -82,12 +101,17 @@ section {
 				transition: 0.5s;
 				cursor: pointer;
 
-				p {
-					font-size: 1.5rem;
-					font-weight: 600;
+				a {
+					text-decoration: none;
 
-					i {
-						font-size: 1.7rem;
+					p {
+						color: $primary-inverce-text-color;
+						font-size: 1.5rem;
+						font-weight: 600;
+
+						i {
+							font-size: 1.7rem;
+						}
 					}
 				}
 
@@ -206,6 +230,20 @@ section {
 	&.sec-meal-menu {
 		padding-top: 80px;
 
+		.nav-tabs {
+			button {
+				img {
+					max-width: 30px;
+				}
+
+				color: $primary-color;
+
+				&.active {
+					color: $secondary-color;
+				}
+			}
+		}
+
 		.meals {
 			padding-top: 10px;
 
@@ -253,6 +291,7 @@ section {
 	&.sec-contact {
 		padding-top: 160px;
 		color: $primary-inverce-text-color;
+		overflow-x: hidden;
 
 		.div-bg {
 			background: url("../img/contactus-bg.jpg") no-repeat center bottom / cover;
@@ -355,6 +394,17 @@ footer {
 				}
 			}
 		}
+	}
+}
+
+.meal-modal {
+	button {
+		background: $primary-color;
+		color: $primary-inverce-text-color;
+	}
+
+	.meal-img {
+		max-width: 250px;
 	}
 }
 
