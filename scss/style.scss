@@ -395,12 +395,29 @@ footer {
 			}
 		}
 	}
+
+	.copyright {
+		&:hover {
+			color: $text-gray !important;
+			cursor: default;
+		}
+		a {
+			color: $secondary-color;
+		}
+	}
 }
 
 .meal-modal {
 	button {
 		background: $primary-color;
 		color: $primary-inverce-text-color;
+		border: solid 1px $primary-color;
+		transition: 0.5s;
+
+		&:hover {
+			color: $primary-color;
+			background: $primary-inverce-text-color;
+		}
 	}
 
 	.meal-img {
